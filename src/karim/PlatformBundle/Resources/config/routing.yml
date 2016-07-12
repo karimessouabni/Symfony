@@ -1,0 +1,39 @@
+karim_platform_home:
+    path:      /{page}
+    defaults:
+        _controller: karimPlatformBundle:Advert:index
+        page:        1
+    requirements:
+        page: \d*
+
+karim_platform_view:
+    path:      /advert/{id}
+    defaults:
+        _controller: karimPlatformBundle:Advert:view
+    requirements:
+        id: \d+
+
+#karim_platform_view_slug:
+#    path:      /{year}/{slug}.{_format}
+#    defaults:
+#        _controller: karimPlatformBundle:Advert:viewSlug
+#        _format: xml
+
+karim_platform_add:
+    path:      /add
+    defaults:
+        _controller: karimPlatformBundle:Advert:add
+
+karim_platform_edit:
+      path:      /edit/{id}
+      defaults:
+          _controller: karimPlatformBundle:Advert:edit
+      requirements:
+          id: \d+
+
+karim_platform_delete:
+      path:      /delete/{id}
+      defaults:
+          _controller: karimPlatformBundle:Advert:delete
+      requirements:
+          id: \d+

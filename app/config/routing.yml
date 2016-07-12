@@ -1,0 +1,3 @@
+karim_platform:
+    resource: "@karimPlatformBundle/Resources/config/routing.yml"
+    prefix:   /platform

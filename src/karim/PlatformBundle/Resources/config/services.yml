@@ -1,0 +1,15 @@
+# src/OC/PlatformBundle/Resources/config/services.yml
+
+services:
+    karim_platform.antispam:
+        class: karim\PlatformBundle\Antispam\karimAntispam
+        arguments:
+                    - "@mailer"
+                    - %kokoa%
+                    - %database_name%
+                    - 50
+
+
+
+parameters:
+    kokoa : kariimkoa
